@@ -158,7 +158,7 @@ Edit `backend/admin.json`:
 
 ### File Storage
 Protected files location: `backend/files`
-- Supported format: PDF
+- Supported format: All(.pdf recommended)
 - Auto-configured on upload
 
 ## 📝 Development Notes

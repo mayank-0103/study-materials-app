@@ -7,11 +7,32 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", updateNavWidth);
 });
 
+// Replace the items loading code at the beginning with:
+let items = []; // Global items array
+
+// Add this function to load items
+async function loadItemsFromServer() {
+    try {
+        const response = await fetch('http://localhost:3000/items');
+        const data = await response.json();
+        if (data.success) {
+            items = data.items;
+            // Initialize items display
+            items.forEach((item, index) => {
+                addItems(index);
+            });
+            // Update filter options
+            updateFilterOptions();
+        }
+    } catch (err) {
+        console.error('Error loading items:', err);
+    }
+}
+
+// Update the DOMContentLoaded event listener
 document.addEventListener("DOMContentLoaded", function() {
-    // Initialize items
-    items.forEach((item, index) => {
-        addItems(index);
-    });
+    // Load items from server
+    loadItemsFromServer();
 
     // Initialize cart
     CART();

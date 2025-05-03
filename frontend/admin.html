@@ -751,14 +751,15 @@
             }
         }
 
-        // Update the loadItems function to populate subjects dynamically
+        // Update the loadItems function in the script section
         function loadItems() {
             Promise.all([
-                fetch('../items.js').then(res => res.text()),
-                fetch('http://localhost:3000/subjects').then(res => res.json())
+                fetch('http://localhost:3000/items'),
+                fetch('http://localhost:3000/subjects')
             ])
-            .then(([itemsText, subjectsData]) => {
-                const itemsArray = eval(itemsText.replace('const items =', ''));
+            .then(([itemsRes, subjectsRes]) => Promise.all([itemsRes.json(), subjectsRes.json()]))
+            .then(([itemsData, subjectsData]) => {
+                const itemsArray = itemsData.success ? itemsData.items : [];
                 const subjects = subjectsData.success ? subjectsData.subjects : {};
                 
                 // Update subjects dropdown
@@ -921,7 +922,7 @@
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
-                    alert('Item removed successfully! Please wait while the system updates...');
+                    alert(data.message || 'Item removed successfully! Please wait while the system updates...');
                     // Wait for server restart (5 seconds)
                     setTimeout(() => {
                         window.location.reload(true);

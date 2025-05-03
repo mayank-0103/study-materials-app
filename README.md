@@ -12,7 +12,7 @@ A full-stack web application for selling and distributing study materials with s
 - 🔑 Secure one-time password for downloads
 - 📚 Subject-wise material organization
 - 🔍 Search and filter capabilities
-- 📱 Responsive design
+- 🌐 Easy server management with batch scripts
 
 ## 🛠️ Tech Stack
 
@@ -26,6 +26,7 @@ A full-stack web application for selling and distributing study materials with s
 
 - Node.js (v14+ recommended)
 - npm (comes with Node.js)
+- Python (for serving frontend)
 - Web browser with JavaScript enabled
 
 ## ⚡ Quick Start
@@ -57,6 +58,16 @@ A full-stack web application for selling and distributing study materials with s
    ```
    Access at: http://localhost:5500
 
+4. **Automated Server Management**
+   - Start both servers using the batch script:
+     ```bash
+     start-servers.bat
+     ```
+   - Stop both servers using the batch script:
+     ```bash
+     stop-servers.bat
+     ```
+
 ## 📁 Project Structure
 
 ```
@@ -78,6 +89,8 @@ study-materials-app/
 │   ├── signup.css        # Auth pages styles
 │   ├── app.js           # Core application logic
 │   └── items.js         # Study materials data
+├── start-servers.bat     # Script to start servers
+└── stop-servers.bat      # Script to stop servers
 ```
 
 ## 🔑 Authentication

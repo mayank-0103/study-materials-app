@@ -1,5 +1,20 @@
 {
   "Assembly Language Tutorial": {
     "file": "files/assembly_tutorial.pdf"
+  },
+  "Discrete Mathematics Book": {
+    "file": "files/DiscreteMathematics-ebook.pdf"
+  },
+  "System Programming Book": {
+    "file": "files/Systems_Programming_-_John_J._Donovan_DaVerm1.pdf"
+  },
+  "Assembly Lang. Tutorial": {
+    "file": "files/assembly_tutorial.pdf"
+  },
+  "Elementary Linear Algebra Book": {
+    "file": "files/Stephen_Andrilli,_David_Hecker_-_Elementary_Linear_240119_120913.pdf"
+  },
+  "Wifi Based Home Automation Code": {
+    "file": "files/FinalCode.ino"
   }
 }

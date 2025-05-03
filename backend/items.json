@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "title": "Discrete Mathematics Book",
+    "desc": "Kenneth H. Rosen",
+    "price": 100,
+    "subject": "cslb_152",
+    "filename": "DiscreteMathematics-ebook.pdf"
+  },
+  {
+    "title": "System Programming Book",
+    "desc": "John J. Donovan",
+    "price": 55,
+    "subject": "cslb_153",
+    "filename": "Systems_Programming_-_John_J._Donovan_DaVerm1.pdf"
+  },
+  {
+    "title": "Assembly Lang. Tutorial",
+    "desc": "by tutorialspoint.com",
+    "price": 20,
+    "subject": "cslb_153",
+    "filename": "assembly_tutorial.pdf"
+  },
+  {
+    "title": "Elementary Linear Algebra Book",
+    "desc": "Stephen Andrilli, David Hecker",
+    "price": 123,
+    "subject": "malb_152",
+    "filename": "Stephen_Andrilli,_David_Hecker_-_Elementary_Linear_240119_120913.pdf"
+  },
+  {
+    "title": "Wifi Based Home Automation Code",
+    "desc": "By Mayank, Rohit, Priyanshu",
+    "price": 10,
+    "subject": "cspb_154",
+    "filename": "FinalCode.ino"
+  }
+]

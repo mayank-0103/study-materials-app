@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "name": "TestAcc",
+    "email": "test@gmail.com",
+    "password": "test",
+    "purchases": [
+      {
+        "title": "Discrete Mathematics Book",
+        "price": 100,
+        "date": "03/05/2025",
+        "time": "20:32:59",
+        "timestamp": 1746284579518
+      },
+      {
+        "title": "Wifi Based Home Automation Code",
+        "price": 10,
+        "date": "03/05/2025",
+        "time": "20:32:59",
+        "timestamp": 1746284579518
+      }
+    ]
+  }
+]

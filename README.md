@@ -103,7 +103,7 @@ study-materials-app/
 ### Admin Login
 - Default credentials:
   - Email: admin@study.com
-  - Password: admin123
+  - Password: qwerty
 - Access to user management
 - Material upload capabilities
 
